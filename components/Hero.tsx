@@ -1,83 +1,146 @@
-'use client'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <motion.header
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
-      className="min-h-[75vh] flex flex-col items-center justify-center text-center"
-    >
+    <header className="relative min-h-[85vh] flex flex-col justify-center overflow-hidden px-6">
 
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.2 }}
-      >
-        <Image
-          src="/images/ai.jpg"
-          alt="Prathiush Arun"
-          width={140}
-          height={140}
-          style={{ objectFit: 'cover' }}
-          className="rounded-full border border-white/10 shadow-2xl"
-          priority
-        />
-      </motion.div>
+      {/* Background Glow */}
 
-      <h1 className="text-5xl md:text-7xl font-bold tracking-tight mt-8 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-        Prathiush Arun
-      </h1>
+      <div className="absolute inset-0 -z-10 overflow-hidden">
 
-      <p className="text-[var(--muted)] mt-4 text-lg">
-        Full Stack Engineer • SaaS Builder
-      </p>
+        <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-blue-500/20 blur-3xl rounded-full" />
 
-      <p className="max-w-2xl mt-6 text-[var(--muted)] leading-relaxed text-lg">
-        Building scalable applications, automation systems, and modern digital products.
-      </p>
+        <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-purple-500/10 blur-3xl rounded-full" />
 
-      <div className="flex flex-wrap items-center justify-center gap-6 mt-10 text-sm">
+      </div>
 
-  <a
-    className="text-blue-500 hover:text-blue-400 transition duration-200 hover:-translate-y-0.5"
-    href="https://github.com/prathiusharun"
-  >
-    GitHub
-  </a>
+      <div className="container-width text-center fade-in">
 
-  <a
-    className="text-blue-500 hover:text-blue-400 transition duration-200 hover:-translate-y-0.5"
-    href="https://www.linkedin.com/in/prathiusharun/"
-  >
-    LinkedIn
-  </a>
+        {/* Profile */}
 
-  <a
-    className="text-blue-500 hover:text-blue-400 transition duration-200 hover:-translate-y-0.5"
-    href="https://x.com/prathiusharun_"
-  >
-    Twitter
-  </a>
+        <div className="flex justify-center">
 
-  <a
-    className="text-blue-500 hover:text-blue-400 transition duration-200 hover:-translate-y-0.5"
-    href="https://substack.com/@prathiusharun"
-  >
-    Substack
-  </a>
+          <div className="relative">
 
-  <a
-    className="text-blue-500 hover:text-blue-400 transition duration-200 hover:-translate-y-0.5"
-    href="https://medium.com/@prathiusharun"
-  >
-    Medium
-  </a>
+            <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-2xl scale-125" />
 
+            <Image
+              src="/images/ai.jpg"
+              alt="Prathiush Arun"
+              width={150}
+              height={150}
+              priority
+              className="
+                relative
+                rounded-full
+                border
+                border-white/10
+                shadow-2xl
+                object-cover
+              "
+            />
+
+          </div>
+
+        </div>
+
+        {/* Heading */}
+
+        <h1
+          className="
+            mt-6
+            text-5xl
+            md:text-7xl
+            font-bold
+            tracking-tight
+            leading-tight
+          "
+        >
+          <span className="bg-gradient-to-r from-white via-white to-zinc-500 bg-clip-text text-transparent">
+            Prathiush Arun
+          </span>
+        </h1>
+
+        {/* Subtitle */}
+
+        <p
+          className="
+            mt-5
+            text-lg
+            md:text-xl
+            text-[var(--muted)]
+            max-w-2xl
+            mx-auto
+            leading-relaxed
+          "
+        >
+          Full Stack Engineer building modern SaaS products,
+          AI tools, automation systems, and scalable digital experiences.
+        </p>
+
+      {/* Social Links */}
+
+       <div
+  className="
+    flex
+    flex-wrap
+    justify-center
+    gap-x-6
+    gap-y-3
+    mt-3
+    text-sm
+    text-[var(--muted)]
+  "
+>
+
+          <a
+            href="https://github.com/prathiusharun"
+            target="_blank"
+            className="hover:text-white transition"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/prathiusharun/"
+            target="_blank"
+            className="hover:text-white transition"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://x.com/prathiusharun_"
+            target="_blank"
+            className="hover:text-white transition"
+          >
+            Twitter
+          </a>
+
+          <a
+            href="https://substack.com/@prathiusharun"
+            target="_blank"
+            className="hover:text-white transition"
+          >
+            Substack
+          </a>
+
+          <a
+            href="https://medium.com/@prathiusharun"
+            target="_blank"
+            className="hover:text-white transition"
+          >
+            Medium
+          </a>
+
+        </div>
+      <div className="mt-16 text-[var(--muted)] text-sm animate-pulse">
+  Scroll to explore
 </div>
+      
+      </div>
+      
 
-    </motion.header>
+    </header>
   )
 }

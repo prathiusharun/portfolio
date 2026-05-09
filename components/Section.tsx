@@ -6,9 +6,9 @@ export default function Section({
   children: React.ReactNode
 }) {
   return (
-    <section className="max-w-4xl mx-auto px-6 py-10">
+    <section className="flex flex-col">
 
-      <h2 className="text-xl font-semibold mb-6 tracking-tight">
+      <h2 className="text-xl md:text-2xl font-medium mb-6">
         {title}
       </h2>
 

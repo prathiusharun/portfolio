@@ -1,37 +1,39 @@
-import Card from './Card'
-
 export default function Project() {
   return (
-    <Card>
+    <div className="space-y-10">
 
-      <h3 className="text-lg font-semibold">
-        Weather App
-      </h3>
+      <div className="py-6 border-0">
 
-      <p className="text-[var(--muted)] mt-2 leading-relaxed">
-        Real-time weather dashboard using API integration.
-      </p>
+        <h3 className="text-xl font-semibold">
+          Weather App
+        </h3>
 
-      <div className="flex items-center gap-4 mt-4 text-sm">
+        <p className="text-[var(--muted)] mt-2 leading-relaxed">
+          Real-time weather dashboard using API integration.
+        </p>
 
-        <a
-          href="https://weather-app-zeta-ten-59.vercel.app/"
-          target="_blank"
-          className="text-[var(--text)] hover:opacity-70 transition"
-        >
-          Live Demo →
-        </a>
+        <div className="flex gap-6 mt-4 text-sm">
 
-        <a
-          href="https://github.com/prathiusharun/Weather-app"
-          target="_blank"
-          className="text-[var(--muted)] hover:text-[var(--text)] transition"
-        >
-          GitHub
-        </a>
+          <a
+            href="https://weather-app-zeta-ten-59.vercel.app/"
+            target="_blank"
+            className="text-blue-400 hover:text-blue-300 transition"
+          >
+            Live
+          </a>
+
+          <a
+            href="https://github.com/prathiusharun/Weather-app"
+            target="_blank"
+            className="text-blue-400 hover:text-blue-300 transition"
+          >
+            GitHub
+          </a>
+
+        </div>
 
       </div>
 
-    </Card>
+    </div>
   )
 }

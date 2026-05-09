@@ -7,6 +7,7 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     const saved = localStorage.getItem('theme')
+
     const isDark = saved === 'dark'
 
     document.documentElement.classList.toggle('dark', isDark)
@@ -15,16 +16,25 @@ export default function ThemeToggle() {
 
   const toggle = () => {
     const next = !dark
+
     setDark(next)
 
-    document.documentElement.classList.toggle("dark")
+    document.documentElement.classList.toggle('dark', next)
+
     localStorage.setItem('theme', next ? 'dark' : 'light')
   }
 
   return (
     <button
       onClick={toggle}
-      className="fixed top-5 right-5 border px-3 py-1 rounded"
+      className="
+        fixed top-4 right-4 z-50
+        px-3 py-1
+        rounded-full
+        border border-white/20
+        backdrop-blur
+        text-sm
+      "
     >
       {dark ? 'Light' : 'Dark'}
     </button>

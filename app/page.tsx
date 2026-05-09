@@ -4,22 +4,19 @@ import Project from '@/components/Projects'
 import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
 import Footer from '@/components/Footer'
-import ThemeToggle from '@/components/ThemeToggle'
 
 export default function Page() {
   return (
-    <main className="max-w-5xl mx-auto px-6">
-
-      <ThemeToggle />
+    <main className="max-w-5xl mx-auto px-6 flex flex-col gap-24 py-16">
 
       <Hero />
 
-      <Section title="Work">
-        <Project />
-      </Section>
-
       <Section title="Experience">
         <Experience />
+      </Section>
+
+      <Section title="Projects">
+        <Project />
       </Section>
 
       <Section title="Skills">
