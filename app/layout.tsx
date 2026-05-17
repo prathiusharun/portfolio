@@ -5,6 +5,8 @@ export const metadata = {
   title: 'Prathiush Arun | Full Stack Engineer',
   description:
     'Prathiush Arun is a Full Stack Engineer building modern SaaS products, AI tools, and scalable digital experiences.',
+      verification: {
+    google: 'E-kw7kK2M4qXtmsyQ7NDmwuY75OM7Y4XadGFu6YHKCw',
   metadataBase: new URL('https://portfolio-682g.vercel.app'),
   alternates: {
     canonical: '/',
@@ -27,6 +29,7 @@ export const metadata = {
     firstName: 'Prathiush',
     lastName: 'Arun',
   },
+  
   twitter: {
     card: 'summary_large_image',
     title: 'Prathiush Arun | Full Stack Engineer',
