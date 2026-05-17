@@ -63,20 +63,7 @@ export default function Hero() {
 
         {/* Subtitle */}
 
-        <p
-          className="
-            mt-5
-            text-lg
-            md:text-xl
-            text-[var(--muted)]
-            max-w-2xl
-            mx-auto
-            leading-relaxed
-          "
-        >
-          Full Stack Engineer building modern SaaS products,
-          AI tools, automation systems, and scalable digital experiences.
-        </p>
+  
 
         {/* Bio — SEO body text, keep "Prathiush Arun" natural here */} <p className="mt-4 text-sm text-[var(--muted)] max-w-xl mx-auto leading-relaxed"> I'm Prathiush Arun, a self-taught Full Stack Engineer from Kerala, India. I build production-grade web applications and write about software engineering on Medium and Substack. </p>
 
