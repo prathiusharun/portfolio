@@ -44,6 +44,7 @@ export default function Hero() {
   I'm Prathiush Arun, a self-taught Full Stack Engineer from Kerala, India -
   open to full-stack engineering roles
 </p>
+
     
 
         {/* Social Links */}
