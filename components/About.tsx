@@ -3,9 +3,7 @@ export default function About() {
     <div className="space-y-4 text-[var(--muted)] leading-relaxed max-w-2xl">
       <p>
         I'm a self-taught Full Stack Engineer from Kerala, India, with a background 
-        spanning frontend, backend, databases, networking, and DevOps. I didn't come 
-        through a CS degree - I built my way here through projects, systems thinking, 
-        and deliberate practice.
+        spanning frontend, backend, databases, networking, and DevOps. 
       </p>
       <p>
         My focus is on production-grade engineering: CI/CD pipelines, containerized 
