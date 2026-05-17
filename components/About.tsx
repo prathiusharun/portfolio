@@ -4,19 +4,19 @@ export default function About() {
       <p>
         I'm a self-taught Full Stack Engineer from Kerala, India, with a background 
         spanning frontend, backend, databases, networking, and DevOps. I didn't come 
-        through a CS degree — I built my way here through projects, systems thinking, 
+        through a CS degree - I built my way here through projects, systems thinking, 
         and deliberate practice.
       </p>
       <p>
         My focus is on production-grade engineering: CI/CD pipelines, containerized 
-        deployments, auth systems, and scalable APIs — not just making things work, 
+        deployments, auth systems, and scalable APIs - not just making things work, 
         but making them work the right way. I write about what I learn on{' '}
         <a href="https://medium.com/@prathiusharun" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">Medium</a>
         {' '}and{' '}
         <a href="https://substack.com/@prathiusharun" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">Substack</a>.
       </p>
       <p>
-        Currently open to full-stack or backend engineering roles — remote or US/Canada based.
+        Currently open to full-stack or backend engineering roles - remote or US/Canada based.
       </p>
     </div>
   )

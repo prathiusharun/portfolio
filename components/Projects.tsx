@@ -16,11 +16,7 @@ export default function Project() {
 
       <div className="py-6 border-0">
         <h3 className="text-xl font-semibold">Job Tracker</h3>
-        <p className="text-[var(--muted)] mt-2 leading-relaxed">
-          Full-stack SaaS for tracking job applications. Built with Next.js 16,
-          NextAuth v5, Prisma 7, PostgreSQL, Tailwind CSS v4, shadcn/ui, Docker,
-          Nginx, GitHub Actions CI.
-        </p>
+        
         <p className="text-[var(--muted)] mt-2 leading-relaxed">
   Full-stack SaaS that centralizes job application tracking with status 
   management, notes, and deadline visibility. Built with Next.js 16, NextAuth v5, 
