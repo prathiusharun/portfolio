@@ -4,6 +4,8 @@ import Project from '@/components/Projects'
 import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
 import Footer from '@/components/Footer'
+import About from '@/components/About'
+import Contact from '@/components/Contact'
 
 export default function Page() {
   return (
@@ -11,7 +13,11 @@ export default function Page() {
 
       <Hero />
 
-      <Section title="Experience">
+      <Section title="About">
+  <About />
+</Section>
+
+      <Section title="Experience">a
         <Experience />
       </Section>
 
@@ -22,8 +28,13 @@ export default function Page() {
       <Section title="Skills">
         <Skills />
       </Section>
+      <Section title="Contact">
+  <Contact />
+</Section>
 
-      <Footer />
+   <div className="pb-8">
+  <Footer />
+</div>
 
     </main>
   )

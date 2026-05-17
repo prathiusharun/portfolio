@@ -6,14 +6,11 @@ export default function Section({
   children: React.ReactNode
 }) {
   return (
-    <section className="flex flex-col">
-
+    <section className="flex flex-col" aria-label={title}>
       <h2 className="text-xl md:text-2xl font-medium mb-6">
         {title}
       </h2>
-
       {children}
-
     </section>
   )
 }

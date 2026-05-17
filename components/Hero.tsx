@@ -26,7 +26,7 @@ export default function Hero() {
 
             <Image
               src="/images/ai.jpg"
-              alt="Prathiush Arun"
+              alt="Prathiush Arun - Full Stack Engineer"
               width={150}
               height={150}
               priority
@@ -78,6 +78,8 @@ export default function Hero() {
           AI tools, automation systems, and scalable digital experiences.
         </p>
 
+        {/* Bio — SEO body text, keep "Prathiush Arun" natural here */} <p className="mt-4 text-sm text-[var(--muted)] max-w-xl mx-auto leading-relaxed"> I'm Prathiush Arun, a self-taught Full Stack Engineer from Kerala, India. I build production-grade web applications and write about software engineering on Medium and Substack. </p>
+
       {/* Social Links */}
 
        <div
@@ -96,6 +98,7 @@ export default function Hero() {
           <a
             href="https://github.com/prathiusharun"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition"
           >
             GitHub
@@ -104,6 +107,7 @@ export default function Hero() {
           <a
             href="https://www.linkedin.com/in/prathiusharun/"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition"
           >
             LinkedIn
@@ -112,6 +116,7 @@ export default function Hero() {
           <a
             href="https://x.com/prathiusharun_"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition"
           >
             Twitter
@@ -120,6 +125,7 @@ export default function Hero() {
           <a
             href="https://substack.com/@prathiusharun"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition"
           >
             Substack
@@ -128,6 +134,7 @@ export default function Hero() {
           <a
             href="https://medium.com/@prathiusharun"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-white transition"
           >
             Medium
