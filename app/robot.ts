@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://portfolio-682g.vercel.app/sitemap.xml',
+    sitemap: 'https://prathiush-portfolio.vercel.app',
   }
 }
