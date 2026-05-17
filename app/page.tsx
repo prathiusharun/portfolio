@@ -4,7 +4,7 @@ import Project from '@/components/Projects'
 import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
 import Footer from '@/components/Footer'
-import About from '@/components/About'
+
 import Contact from '@/components/Contact'
 
 export default function Page() {
@@ -13,11 +13,9 @@ export default function Page() {
 
       <Hero />
 
-      <Section title="About">
-  <About />
-</Section>
+     
 
-      <Section title="Experience">a
+      <Section title="Experience">
         <Experience />
       </Section>
 
