@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <div className="space-y-4 text-[var(--muted)] leading-relaxed">
       <p>
-        I'm currently open to full-stack engineering roles - remote, US, or Canada based.
+        I'm currently open to full-stack engineering roles.
         If you're hiring or want to collaborate, reach out directly.
       </p>
       <div className="flex flex-wrap gap-6 text-sm">

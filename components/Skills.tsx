@@ -25,23 +25,35 @@ const skillGroups = [
 
 export default function Skills() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       {skillGroups.map((group) => (
-        <div key={group.label}>
-          <p className="flex items-center gap-2 text-[10px] uppercase tracking-[0.18em] text-[var(--muted)] mb-3 after:flex-1 after:h-px after:bg-white/10">
+        <div key={group.label} className="space-y-4">
+          {/* Section Header */}
+          <p className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] text-[var(--muted)]">
             {group.label}
+            <span className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent" />
           </p>
-          <div className="flex flex-wrap gap-2">
+
+          {/* Skills Grid */}
+          <div className="flex flex-wrap gap-3">
             {group.skills.map((skill) => (
               <span
                 key={skill.name}
-                className="flex items-center gap-1.5 px-3 py-1 rounded-full border border-white/10 text-sm text-[var(--muted)] hover:text-white hover:border-white/25 hover:bg-white/5 transition"
+                className="relative px-4 py-1.5 rounded-full text-sm text-[var(--muted)] border border-white/10
+                           bg-white/[0.02] backdrop-blur-md
+                           hover:text-white hover:border-white/25 hover:bg-white/10
+                           transition duration-200 shadow-sm"
               >
+                {/* subtle glow (NOT a dot anymore) */}
                 <span
-                  className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                  style={{ backgroundColor: skill.color }}
+                  className="absolute inset-0 rounded-full opacity-0 hover:opacity-100 transition"
+                  style={{
+                    boxShadow: `0 0 20px ${skill.color}33`,
+                  }}
                 />
-                {skill.name}
+
+                {/* text only (no circle) */}
+                <span className="relative z-10">{skill.name}</span>
               </span>
             ))}
           </div>

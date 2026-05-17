@@ -27,41 +27,51 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="space-y-4">
+    <div className="space-y-10">
       {projects.map((project) => (
         <div
           key={project.title}
-          className="border border-white/10 rounded-xl px-6 py-5 hover:border-white/20 transition"
+          className="group relative py-6 transition hover:translate-x-1"
         >
-          <div className="flex items-start justify-between gap-3 mb-2">
-            <h3 className="text-sm font-medium text-white">{project.title}</h3>
-            <div className="flex gap-2 flex-shrink-0">
+          {/* Header */}
+          <div className="flex flex-col gap-3 mb-4">
+            <h3 className="text-lg font-semibold text-white group-hover:text-white/90 transition">
+              {project.title}
+            </h3>
+
+            {/* Action links */}
+            <div className="flex gap-3">
               <a
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-[11px] px-3 py-1 rounded-full border border-white/10 text-[var(--muted)] hover:text-white hover:border-white/25 transition"
+                className="px-4 py-1.5 rounded-full text-xs border border-white/10 text-[var(--muted)] hover:text-white hover:border-white/30 transition"
               >
-                Live
+                Live Demo →
               </a>
+
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-[11px] px-3 py-1 rounded-full border border-white/10 text-[var(--muted)] hover:text-white hover:border-white/25 transition"
+                className="px-4 py-1.5 rounded-full text-xs border border-white/10 text-[var(--muted)] hover:text-white hover:border-white/30 transition"
               >
-                GitHub
+                GitHub →
               </a>
             </div>
           </div>
-          <p className="text-sm text-[var(--muted)] leading-relaxed mb-3">
+
+          {/* Description */}
+          <p className="text-sm text-[var(--muted)] leading-relaxed mb-5 max-w-2xl">
             {project.description}
           </p>
-          <div className="flex flex-wrap gap-1.5">
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-[11px] px-2 py-0.5 rounded bg-white/5 text-[var(--muted)]"
+                className="text-[11px] px-3 py-1 rounded-full bg-white/0 text-[var(--muted)] border border-white/10 hover:border-white/20 transition"
               >
                 {tag}
               </span>
