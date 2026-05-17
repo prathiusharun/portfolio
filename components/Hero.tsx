@@ -39,7 +39,11 @@ export default function Hero() {
           Full Stack Engineer building modern SaaS products,
           AI tools, automation systems, and scalable digital experiences.
         </p>
-
+        {/* Bio — SEO body text */}
+<p className="mt-4 text-sm text-[var(--muted)] max-w-xl mx-auto leading-relaxed">
+  I'm Prathiush Arun, a self-taught Full Stack Engineer from Kerala, India -
+  open to full-stack engineering roles
+</p>
     
 
         {/* Social Links */}
