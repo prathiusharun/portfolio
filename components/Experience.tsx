@@ -2,6 +2,7 @@ import Card from './Card'
 
 export default function Experience() {
   return (
+    <section id="experience">
     <div className="space-y-8">
 
       <Card>
@@ -25,5 +26,6 @@ export default function Experience() {
       </Card>
 
     </div>
+    </section>
   )
 }

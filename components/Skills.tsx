@@ -25,6 +25,7 @@ const skillGroups = [
 
 export default function Skills() {
   return (
+    <section id="skills">
     <div className="space-y-10">
       {skillGroups.map((group) => (
         <div key={group.label} className="space-y-4">
@@ -60,5 +61,6 @@ export default function Skills() {
         </div>
       ))}
     </div>
+    </section>
   )
 }

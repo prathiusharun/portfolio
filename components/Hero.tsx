@@ -11,19 +11,31 @@ export default function Hero() {
       </div>
 
       <div className="container-width text-center fade-in">
-        <nav className="flex justify-center gap-6 mb-10 text-sm text-[var(--muted)]">
+       <nav className="flex flex-wrap justify-center gap-6 mb-10 text-sm text-[var(--muted)]">
   <Link href="/" className="hover:text-white transition">
     Home
   </Link>
 
   <a
-  href="https://prathiush-blog.vercel.app/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hover:text-white transition"
->
-  Blog
-</a>
+    href="#about"
+    className="hover:text-white transition"
+  >
+    About
+  </a>
+
+  <a
+    href="#skills"
+    className="hover:text-white transition"
+  >
+    Skills
+  </a>
+
+  <a
+    href="#experience"
+    className="hover:text-white transition"
+  >
+    Experience
+  </a>
 
   <a
     href="#projects"
@@ -38,8 +50,16 @@ export default function Hero() {
   >
     Contact
   </a>
-</nav>
 
+  <a
+    href="https://prathiush-blog.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition"
+  >
+    Blog
+  </a>
+</nav>
         {/* Profile */}
         <div className="flex justify-center">
           <div className="relative">

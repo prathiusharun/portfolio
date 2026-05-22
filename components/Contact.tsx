@@ -1,5 +1,6 @@
 export default function Contact() {
   return (
+     <section id="contact">
     <div className="space-y-4 text-[var(--muted)] leading-relaxed">
       <p>
         I'm currently open to full-stack engineering roles.
@@ -17,5 +18,6 @@ export default function Contact() {
         </a>
       </div>
     </div>
+    </section>
   )
 }

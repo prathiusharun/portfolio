@@ -27,6 +27,7 @@ const projects = [
 
 export default function Projects() {
   return (
+    <section id="projects">
     <div className="space-y-10">
       {projects.map((project) => (
         <div
@@ -80,5 +81,6 @@ export default function Projects() {
         </div>
       ))}
     </div>
+    </section>
   )
 }

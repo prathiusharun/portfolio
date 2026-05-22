@@ -1,5 +1,6 @@
 export default function About() {
   return (
+    <section id="about">
     <div className="space-y-4 text-[var(--muted)] leading-relaxed max-w-2xl">
       <p>
         I'm a self-taught Full Stack Engineer from Kerala, India, with a background 
@@ -17,5 +18,6 @@ export default function About() {
         Currently open to full-stack or backend engineering roles - remote or US/Canada based.
       </p>
     </div>
+    </section>
   )
 }
