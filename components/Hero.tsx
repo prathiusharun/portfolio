@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Link from 'next/link'
 export default function Hero() {
   return (
     <header className="relative min-h-[85vh] flex flex-col justify-center overflow-hidden px-6">
@@ -11,6 +11,34 @@ export default function Hero() {
       </div>
 
       <div className="container-width text-center fade-in">
+        <nav className="flex justify-center gap-6 mb-10 text-sm text-[var(--muted)]">
+  <Link href="/" className="hover:text-white transition">
+    Home
+  </Link>
+
+  <a
+  href="https://prathiush-blog.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-white transition"
+>
+  Blog
+</a>
+
+  <a
+    href="#projects"
+    className="hover:text-white transition"
+  >
+    Projects
+  </a>
+
+  <a
+    href="#contact"
+    className="hover:text-white transition"
+  >
+    Contact
+  </a>
+</nav>
 
         {/* Profile */}
         <div className="flex justify-center">
@@ -41,8 +69,7 @@ export default function Hero() {
         </p>
         {/* Bio — SEO body text */}
 <p className="mt-4 text-sm text-[var(--muted)] max-w-xl mx-auto leading-relaxed">
-  I'm Prathiush Arun, a self-taught Full Stack Engineer from Kerala, India -
-  open to full-stack engineering roles
+I'm Prathiush Arun, a Full Stack Engineer from Kerala, India specializing in Next.js, React, TypeScript, Node.js, scalable backend systems, and modern web applications.
 </p>
 
     
@@ -54,7 +81,7 @@ export default function Hero() {
           <a href="https://x.com/prathiusharun_" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Twitter</a>
           <a href="https://substack.com/@prathiusharun" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Substack</a>
           <a href="https://medium.com/@prathiusharun" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Medium</a>
-        </div>
+          </div>
 
         <div className="mt-16 text-[var(--muted)] text-sm animate-pulse">
           Scroll to explore

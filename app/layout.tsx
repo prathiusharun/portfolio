@@ -25,7 +25,7 @@ export const metadata = {
         alt: 'Prathiush Arun - Full Stack Engineer',
       },
     ],
-    type: 'profile',
+    type: 'website',
     firstName: 'Prathiush',
     lastName: 'Arun',
   },
@@ -54,6 +54,7 @@ const jsonLd = {
     'https://medium.com/@prathiusharun',
     'https://x.com/prathiusharun_',
     'https://substack.com/@prathiusharun',
+    'https://prathiush-blog.vercel.app/',
   ],
 }
 
