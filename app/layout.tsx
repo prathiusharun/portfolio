@@ -1,20 +1,31 @@
 import './globals.css'
-import ThemeToggle from '@/components/ThemeToggle'
+import { Fraunces, IBM_Plex_Sans } from 'next/font/google'
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-fraunces',
+})
+
+const plexSans = IBM_Plex_Sans({
+  subsets: ['latin'],
+  variable: '--font-plex-sans',
+})
 
 export const metadata = {
-  title: 'Prathiush Arun | Full Stack Engineer',
+  title: 'Prathiush Arun | Full-Stack Engineer',
   description:
-    'Prathiush Arun is a Full Stack Engineer building modern SaaS products, AI tools, and scalable digital experiences.',
-      verification: {
-    google: 'E-kw7kK2M4qXtmsyQ7NDmwuY75OM7Y4XadGFu6YHKCw'},
+    'I build web systems that help businesses capture leads, manage operations, and turn visitors into customers.',
+  verification: {
+    google: 'E-kw7kK2M4qXtmsyQ7NDmwuY75OM7Y4XadGFu6YHKCw',
+  },
   metadataBase: new URL('https://prathiusharun.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Prathiush Arun | Full Stack Engineer',
+    title: 'Prathiush Arun | Full-Stack Engineer',
     description:
-      'Prathiush Arun is a Full Stack Engineer building modern SaaS products, AI tools, and scalable digital experiences.',
+      'I build web systems that help businesses capture leads, manage operations, and turn visitors into customers.',
     url: 'https://prathiusharun.vercel.app',
     siteName: 'Prathiush Arun',
     images: [
@@ -22,19 +33,16 @@ export const metadata = {
         url: '/images/ai.jpg',
         width: 1200,
         height: 630,
-        alt: 'Prathiush Arun - Full Stack Engineer',
+        alt: 'Prathiush Arun | Full-Stack Engineer',
       },
     ],
     type: 'website',
-    firstName: 'Prathiush',
-    lastName: 'Arun',
   },
-  
   twitter: {
     card: 'summary_large_image',
-    title: 'Prathiush Arun | Full Stack Engineer',
+    title: 'Prathiush Arun | Full-Stack Engineer',
     description:
-      'Prathiush Arun is a Full Stack Engineer building modern SaaS products, AI tools, and scalable digital experiences.',
+      'I build web systems that help businesses capture leads, manage operations, and turn visitors into customers.',
     images: ['/images/ai.jpg'],
     creator: '@prathiusharun_',
   },
@@ -44,10 +52,10 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Prathiush Arun',
-  jobTitle: 'Full Stack Engineer',
+  jobTitle: 'Full-Stack Engineer',
   description:
-    'Full Stack Engineer building modern SaaS products, AI tools, and scalable digital experiences.',
-  image: 'https://prathiush-portfolio.vercel.app/images/ai.jpg',
+    'I build web systems that help businesses capture leads, manage operations, and turn visitors into customers.',
+  image: 'https://prathiusharun.vercel.app/images/ai.jpg',
   sameAs: [
     'https://github.com/prathiusharun',
     'https://linkedin.com/in/prathiusharun',
@@ -60,46 +68,21 @@ const jsonLd = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${fraunces.variable} ${plexSans.variable}`}>
       <head>
-        {/* Theme init — runs before paint to prevent flash */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function () {
-                try {
-                  const theme = localStorage.getItem('theme');
-                  if (!theme) {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('theme', 'dark');
-                    return;
-                  }
-                  if (theme === 'dark') document.documentElement.classList.add('dark');
-                  if (theme === 'light') {
-                    document.documentElement.classList.remove('dark');
-                    document.documentElement.classList.add('light');
-                  }
-                } catch (e) {}
-              })();
-            `,
-          }}
-        />
-
-        {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
         />
       </head>
 
-      <body>
-        <ThemeToggle />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
