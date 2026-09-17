@@ -3,7 +3,7 @@ export default function About() {
     <section id="about">
     <div className="space-y-4 text-[var(--muted)] leading-relaxed max-w-2xl">
       <p>
-        I'm a self-taught Full Stack Engineer from Kerala, India, with a background 
+        I&apos;m a self-taught Full Stack Engineer from Kerala, India, with a background
         spanning frontend, backend, databases, networking, and DevOps. 
       </p>
       <p>

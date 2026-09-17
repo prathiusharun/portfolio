@@ -3,13 +3,13 @@ export default function Contact() {
     <div className="contact-panel">
       <div className="contact-copy">
         <p>
-          Tell me what you're trying to build, what is currently getting in
+          Tell me what you&apos;re trying to build, what is currently getting in
           the way, and where you want to get to.
         </p>
 
         <p>
-          We'll use a short call to understand the problem and decide whether
-          I'm the right person to help.
+          We&apos;ll use a short call to understand the problem and decide whether
+         I&apos;m the right personn to help.
         </p>
       </div>
 
