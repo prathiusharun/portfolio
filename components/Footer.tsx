@@ -1,7 +1,33 @@
 export default function Footer() {
   return (
-    <footer className="pt-10 border-t border-white/10 text-center text-sm text-[var(--muted)]">
-      <p>© {new Date().getFullYear()} Prathiush Arun · Full Stack Engineer</p>
+    <footer className="site-footer">
+      <p>© {new Date().getFullYear()} Prathiush Arun</p>
+
+      <div className="footer-links">
+        <a
+          href="https://github.com/prathiusharun"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/prathiusharun/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+  href="https://prathiush-blog.vercel.app"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Writing
+</a>
+      </div>
     </footer>
   )
 }
