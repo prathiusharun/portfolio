@@ -1,4 +1,6 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
+
+const siteUrl = 'https://prathiusharun.vercel.app'
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://prathiusharun.vercel.app',
+    sitemap: `${siteUrl}/sitemap.xml`,
   }
 }

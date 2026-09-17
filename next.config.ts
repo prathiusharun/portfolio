@@ -11,6 +11,26 @@ const withMDX = createMDX({
 const nextConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 
+  async redirects() {
+    return [
+      {
+        source: '/posts/:slug',
+        destination: '/blog/:slug',
+        permanent: true,
+      },
+      {
+        source: '/about',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/tags/:path*',
+        destination: '/blog',
+        permanent: true,
+      },
+    ]
+  },
+
   async headers() {
     return [
       {
