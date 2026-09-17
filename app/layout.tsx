@@ -7,7 +7,7 @@ export const metadata = {
     'Prathiush Arun is a Full Stack Engineer building modern SaaS products, AI tools, and scalable digital experiences.',
       verification: {
     google: 'E-kw7kK2M4qXtmsyQ7NDmwuY75OM7Y4XadGFu6YHKCw'},
-  metadataBase: new URL('https://prathiush-portfolio.vercel.app'),
+  metadataBase: new URL('https://prathiusharun.vercel.app'),
   alternates: {
     canonical: '/',
   },
@@ -15,7 +15,7 @@ export const metadata = {
     title: 'Prathiush Arun | Full Stack Engineer',
     description:
       'Prathiush Arun is a Full Stack Engineer building modern SaaS products, AI tools, and scalable digital experiences.',
-    url: 'https://prathiush-portfolio.vercel.app',
+    url: 'https://prathiusharun.vercel.app',
     siteName: 'Prathiush Arun',
     images: [
       {
@@ -54,7 +54,7 @@ const jsonLd = {
     'https://medium.com/@prathiusharun',
     'https://x.com/prathiusharun_',
     'https://substack.com/@prathiusharun',
-    'https://prathiush-blog.vercel.app/',
+    'https://prathiusharun.vercel.app/',
   ],
 }
 
