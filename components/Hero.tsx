@@ -11,7 +11,6 @@ export default function Hero() {
         <div className="nav-links">
   <a href="#work">Work</a>
   <a href="#process">How I work</a>
-  <a href="https://prathiush-blog.vercel.app/">Writing</a>
   <Link href="/blog">Blog</Link>
   <a href="#contact">Contact</a>
 </div>
